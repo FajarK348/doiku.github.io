@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background: white;
+    width: 1000px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#options {
+    margin: 20px 0;
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: space-around; /* Space between columns */
+}
+
+label {
+    display: block;
+    flex: 0 45%; /* Each button takes up about half the width */
+    padding: 10px 15px; /* Padding for button appearance */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin: 5px 0; /* Margin for spacing */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: white; /* Default background color */
+    color: #218838; /* Default text color */
+    text-align: center; /* Center text in the button */
+}
+
+input[type="radio"] {
+    display: none; /* Hide the radio button */
+}
+
+.selected {
+    background-color: #218838; /* Change to your desired color */
+    color: white; /* Change border color for selected option */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#illustration {
+    margin-top: 20px;
+    width: 20%;
+}
+
+#timer {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #d9534f; /* Red color for the timer */
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doiku | Multiple Choices Quiz</title>
+    <link rel="stylesheet" href="quiz1.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Multiple Choices Quiz</h1>
+        <h2>Pilihlah salah satu jawaban yang tepat untuk digunakan dalam kalimat berikut.</h2>
+        <div id="question-container">
+            <p id="question">Complete the sentence: The capital of France is ________.</p>
+            <div id="options"></div>
+            <button id="submitBtn" onclick="checkAnswer()">Submit</button>
+    <div id="result"></div>
+    <div id="endMessage" style="display:none; color: red;">Kuis telah usai, maaf kamu sudah tidak bisa menjawab lagi</div>
+
+            <div id="timer">Waktu kuis: <span id="time"></span></div>
+        </div>
+    </div>
+    <div class="resultanswer">
+        <img src="images/Dino KiraKira1.png" alt="Correct" class="correct" style="display:none;">
+        <img src="images/Dino book.png" alt="incorrect" class="incorrect" style="display:none;">
+    </div>
+    <div id="resultCard" class="result-card">
+        <div id="resultText"></div>
+        <button onclick="closeResultCard()">Close</button>
+    </div>
+    <script src="quiz1.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="quiz4.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Drag and Drop Arrange Quiz</h1>
+        <h2>Susunlah rangkaian kata di bawah ini dengan menarik dan letakkan. <br> sehingga membentuk sebuah pernyataan yang benar</h2>
+        <div class="sentence" id="sentence">
+            <span class="placeholder">_____</span>
+            <span class="placeholder">_____</span>
+            <span class="placeholder">_____</span>
+            <span class="placeholder">_____</span>
+            <span class="placeholder">_____</span>
+            <span class="placeholder">_____</span>
+        </div>
+        <div class="words" id="words">
+            <!-- Words will be dynamically loaded here -->
+        </div>
+        <div id="timer">Time Left: 15:00</div> <!-- Timer Display -->
+        <button id="checkAnswers">Check Answers</button>
+        <div id="result"></div>
+
+        <img id="correctImage" src="images/Dino KiraKira1.png" alt="Correct!" style="display: none; width: 250px;" />
+    </div>
+
+    <script src="quiz4.js"></script>
+</body>
+</html>

@@ -1,0 +1,755 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-around;
+    padding: 22px 0;
+    align-items: center;
+    height: 10px;
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 180px;
+    height: 100px;
+    margin: -10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    padding: 6px;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    color: #089E3B;
+    border: 2px solid #089E3B;
+    border-radius: 16px;
+    width: 400px;
+}
+
+
+#search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: -25px;
+}
+
+#search-button img {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 22%;
+    color: black;
+    justify-content: space-evenly;
+    font-size: 12px;
+    font-family: Plus Jakarta Sans;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    cursor: default;
+}
+
+li a:hover {
+    color: #089E3B;
+    transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .container 
+        flex-direction: column;
+        align-items: flex-start;
+
+    nav {
+        margin-top: 60px;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    .search-container {
+        margin-left: -10px;
+        width: 60%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .search-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.container-bab {
+    display: flex;
+    width: 100%;
+    background-color: rgba(36, 174, 103, 1);
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: 40px;
+}
+
+.image-section {
+    flex: 0.45;
+    position: relative;
+}
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(36, 174, 103, 1) 100%);
+}
+.text-section {
+    flex: 1;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: Plus Jakarta Sans;
+}
+.text-section h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.text-section h2 {
+    font-size: 56px;
+    margin: 0;
+}
+
+.text-section p {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.textimg {
+    width: 80%;
+    height: 100%;
+    position: relative;
+}
+
+.dark {
+    height: 40px;
+    width: 40px;
+    margin-top: 0px;
+    margin-left: 60px;
+    padding: 0px;
+    border-radius: 100%;
+    background-color: #089E3B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-color: white;
+  }
+  
+  
+  .dark svg{
+    fill: white;
+  }
+  
+  .dark svg:last-child{
+    display: none;
+  }
+  
+  .dark-mode .dark svg:first-child{
+    display: none;
+  }
+  
+  .dark-mode .dark svg:last-child{
+    display: block;
+  }
+
+  .dark-mode #search-button svg {
+    fill: white;
+  }
+
+  #search-button svg {
+    fill: #3B3C36;
+  }
+
+  .dark-mode .logo {
+    width: 92px;
+    height: 25px;
+    margin: 34px;
+    margin-bottom: 37px;
+}
+
+
+body.dark-mode {
+    background-color: #021923;
+    color: black;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .nav {
+    background-color: #021923;
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .nav a {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .search-container {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode {
+    background-color: #021923;
+    color: black;
+}
+
+body.dark-mode .nav {
+    background-color: #021923;
+    color: white;
+}
+
+body.dark-mode .nav a {
+    color: white;
+}
+
+body .nav li a:hover {
+    color: #089E3B;
+    transition: 0.2s ease-in-out;
+}
+
+body.dark-mode .search-container {
+    color: white;
+}
+
+body.dark-mode .paragraph {
+    background-color: #021923;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode #unselectableParagraph{
+    color: white;
+  }
+
+body.dark-mode .text-indent {
+    color: white;
+}
+
+body.dark-mode .kotoba-btn {
+    background-color: #021923;
+    color: white;
+    transition: background-color 0.7s, color 0.8s;
+}
+
+body.dark-mode .honbun {
+    background-color: #021923;
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .honbun h1 {
+    color: white;
+}
+
+body.dark-mode .tangonoimi {
+    background-color: #021923;
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .quiz-container {
+    background-color: #021923;
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .quiz-container p {
+    color: white;
+}
+
+#unselectableParagraph {
+    user-select: none; /* Prevent text selection */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    pointer-events: none; /* Prevent interaction */
+    color: transparent; /* Make text invisible */
+    text-shadow: 0 0 0 black; /* Show text using shadow */
+  }
+
+.paragraph {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.paragraph p {
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    justify-content: start;
+    align-items: start;
+    font-family: Plus Jakarta Sans;
+    margin-top: 10px;
+}
+
+.text-indent {
+    text-indent: 16px;
+}
+
+.br1 {
+    margin-bottom: 10px;
+}
+
+.paragraph .divider {
+    border: none;
+    align-items: center;
+    justify-content: center;
+    height: 4px;
+    width: 100%;
+    background-color: #089E3B; /* Change color as needed */
+    margin: 10px 0; /* Space around the line */
+}
+    
+.kotoba {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20px; /* Space between the slider and the additional content */
+    padding: 20px; /* Padding inside the additional content */
+    background-color: #24ae67; /* Light background color */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    text-align: start; /* Center the text */
+}
+
+.kotoba h1 {
+    font-size: 42px;
+    color: #fff;
+    margin-left: 40px;
+    margin-top: 0px;
+}
+
+.kotoba h2 {
+    font-family: MS UI Gothic;
+    font-size: 36px;
+    font-weight: 800;
+    color: #fff;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.kotoba-btn {
+    text-align: center;
+    background-color: #ffffff;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    color: #089E3B;
+    padding: 6px 20px 4px ;
+    border: none;
+    border-radius: 20px;
+    font-size: 24px;
+    margin-right: 0px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.spacer {
+    height: 10px; /* Adjust the height as needed */
+}
+
+.honbun {
+    max-width: 1200px;
+    margin: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 18px rgb(195, 228, 206);
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+}
+
+.honbun h1 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.shitsumon {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #10b045;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+}
+
+.tangonoimi {
+    max-width: 1200px;
+    margin: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 18px rgb(195, 228, 206);
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+}
+
+.choice {
+    word-spacing: 20px;
+    margin: 20px;
+    gap: 10px;
+    padding: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #10b045;
+}
+
+h1 {
+    text-align: start;
+}
+
+h2 {
+    margin-left: 3px;
+    text-align: start;
+    font-size: 16px;
+}
+
+.question {
+    margin: 15px 0;
+}
+
+input[type="text"] {
+    margin-left: 10px;
+    gap: 10px;
+    padding: 8px;
+    border: 2px solid #089E3B;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 20%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+.quiz-container {
+    max-width: 1200px;
+    position: relative;
+    margin: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 18px rgb(195, 228, 206);
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+}
+
+.overlay-images {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 20px 0; /* Space between the title and images */
+    overflow: hidden; /* Hide overflow for animation */
+    height: ;
+}
+
+.overlay-image1 {
+    justify-items: end;
+    width: 35px; /* Set a width for the images */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position images absolutely */
+    top: 41.5px;
+    bottom: 0px;
+    right: 132px;
+    z-index: 1;
+    transform: translatex(50px); /* Start slightly below */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition for opacity and position */
+}
+
+.overlay-image {
+    justify-items: end;
+    width: 90px; /* Set a width for the images */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position images absolutely */
+    top: 0px;
+    bottom: 0px;
+    right: 112px;
+    opacity:r 0; /* Start with images hidden */
+    transform: translatex(65px); /* Start slightly below */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition for opacity and position */
+}
+
+.overlay-images:hover .overlay-image {
+    opacity: 1; /* Make images visible on hover */
+    transform: translateY(0); /* Move to original position */
+}
+
+.overlay-image:hover {
+    transform: scale(1); /* Scale up on hover */
+}
+
+.overlay-images:hover .overlay-image1 {
+    opacity: 1; /* Make images visible on hover */
+    transform: translateY(0); /* Move to original position */
+}
+
+.overlay-image1:hover {
+    transform: scale(1); /* Scale up on hover */
+}
+
+.overlay-images p {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #218838;
+    font-weight: 600;
+}
+
+.quiz-btn {
+    justify-items: end;
+    padding: 16px 26px;
+    margin-right: 100px;
+    background-color: #089E3B;
+    color: white;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: background-color 0.3s;
+    z-index: 1;
+}
+
+.btnbab {
+    display: flex;
+    justify-content: space-between;
+    color: green;
+}
+
+.prevbab {
+    text-align: center;
+    background-color: #00a651;
+    font-family: Plus Jakarta Sans;
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-right: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 40px;
+    word-spacing: 5px;
+    z-index: 1;
+}
+
+.nextbab {
+    text-align: center;
+    background-color: #00a651;
+    font-family: Plus Jakarta Sans;
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-right: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 40px;
+    word-spacing: 5px;
+}
+
+.prevbab:hover {
+    background-color: #218838; /* Change background on hover */
+    color: white;
+    border: none;
+}
+
+.nextbab:hover {
+    background-color: #218838; /* Change background on hover */
+    color: white;
+    border: none;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #24ae67;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+    margin-top: 80px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    overflow: visible;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img {
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    flex-direction: row;
+    min-width: 400px; /* Width of each card */
+    height: auto; /* Height of each card */
+
+}
+
+.footer-img img {
+    max-width: 420px; /* Adjust the size as needed */
+    height: auto;
+    transform: translateY(50px) translateX(-70px);
+}
+
+.footer a{
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-p{
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    cursor: default;
+}
+
+.footer-img2 {
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    flex-direction: row;
+    min-width: 300px; /* Width of each card */
+    height: auto; /* Height of each card */
+}
+
+.footer-img2 img {
+    opacity: 0.8;
+    max-width: 300px; /* Adjust the size as needed */
+    height: auto;
+    transform: translateY(60px) translateX(50px);
+}

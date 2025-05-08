@@ -1,0 +1,271 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background: white;
+    width: 1000px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    
+}
+
+h2 {
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 18px;
+    color: #218838;
+}
+
+
+.sentence {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-weight: 400;
+    color: #28a745;
+}
+
+.sentence2 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-weight: 400;
+    color: #28a745;
+}
+
+
+.placeholder {
+    width: 100px;
+    height: 40px;
+    border: 2px dashed #218838;
+    border-radius: 5px;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.words {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-weight: 400;
+    color: #218838;
+}
+
+.words2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-weight: 400;
+    color: #218838;
+}
+
+.word {
+    padding: 10px;
+    margin: 5px;
+    background-color: #218838;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: grab;
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.word:active {
+    cursor: grabbing;
+}
+
+.correct {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.incorrect {
+    background-color: #dc3545; /* Red */
+    color: white;
+}
+
+#result {
+    margin-top: 20px;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#timer {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: Plus Jakarta Sans;
+    color: #d9534f; /* Red color for the timer */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Plus Jakarta Sans;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#correctImage {
+    display: none; /* Initially hidden */
+    animation: easeIn 1s forwards; /* Animation */
+    position: absolute;
+    left: -60px;
+    bottom: 0px;
+    width: 240px;
+    overflow: hidden;
+}
+
+@keyframes easeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.dark {
+    height: 40px;
+    width: 40px;
+    margin-top: 0px;
+    margin-left: 60px;
+    padding: 0px;
+    border-radius: 100%;
+    background-color: #089E3B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .dark svg{
+    fill: white;
+  }
+  
+  .dark svg:last-child{
+    display: none;
+  }
+  
+  .dark-mode .dark svg:first-child{
+    display: none;
+  }
+  
+  .dark-mode .dark svg:last-child{
+    display: block;
+  }
+
+  .dark-mode .search-button svg {
+    fill: white;
+  }
+
+  .dark-mode .logo {
+    width: 92px;
+    height: 25px;
+    margin: 34px;
+    margin-bottom: 37px;
+}
+
+body.dark-mode .quiz-container {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+    background-color: #021923;
+    box-shadow: 0 0 18px rgb(195, 228, 206);
+}
+
+body.dark-mode {
+    background-color: #021923;
+    color: black;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode label {
+    color: #089E3B;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .placeholder {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body .nav li a:hover {
+    color: #089E3B;
+    transition: 0.2s ease-in-out;
+}
+
+body.dark-mode .content-home p {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .slider p {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .card:hover::after {
+    background: linear-gradient(to top, rgba(2, 25, 35, 1), transparent);
+}
+
+body.dark-mode .ads-section {
+    background-color: #021923;
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .fitur {
+    background-color: #021923;
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .fitur h2 {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .ads-section .btn-ads:hover {
+    background-color: #089E3B;
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}

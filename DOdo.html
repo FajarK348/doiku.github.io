@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Doiku merupakan sebuah situs pembelajaran untuk melatih kemampuan dokkai">
+    <meta name="keywords" content="Dokkai,Doiku">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doiku | Beranda</title>
+    <link rel="stylesheet" href="Dodo.css">
+</head>
+<body>
+    <div class="container">
+    </div>
+    <nav class="nav">
+         <img src="images/logo doiku 2.png" class="logo" id="logo">
+         <img src="images/logo doiku mobile.png" class="logo-mobile" id="logo">
+         <div class="search-container">
+            <input type="text" id="search-input" placeholder="Ingin baca apa hari ini.." autocomplete="off">
+            <button class="search-button" id="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" alt="search" onclick="searchHTML()"/></svg>
+            </button>
+            <div id="suggestions" class="suggestions" style="display: none;"></div>
+            <div>
+                <button class="dark" id="toggleDarkMode">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                </button>
+            </div>
+        </div>
+         <script src="Dodo.js"></script>
+         <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="DOArtikel.html">Artikel</a></li>
+            <li><a href="Other.html">Lainnya</a></li>
+        </ul>
+    </nav>
+    <div class="content-home">
+        <h1>
+            Mari Latih Kemampuan<br>Memahami Bacaan Dokkai-Mu
+        </h1>
+        <p>Dengan mulai membiasakan membaca berbagai artikel yang kamu sukai di sini<br>Yuk mulai membaca bersama Dido-kun!</p>
+        <a href="DOArtikel.html" class="btn-home1"> Mulai Membaca</a>
+        <div class="conover">
+            <!-- <img src="White bg square.png" lass="whitebg"> -->
+            <div class="overlay">
+              <div class="dinoover"><img src="images/DINO DOYOMO.png" height="100%" width="100%"></div>
+            </div>
+          </div>
+    </div>
+    <div class="slider">
+        <p>Artikel Hari Ini</p>
+        <a href="DOArtikel.html"><h3>Artikel Lainnya</h3></a>
+        <div class="slider-container">
+            <a href="bab1.html" class="card" id="search-link">
+                <h2 class="headline-bab">Bab 1</h2>
+                <h2 class="subheadline">色のイメージ</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 1 Background.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab2.html" class="card">
+                <h2 class="headline-bab">Bab 2</h2>
+                <h2 class="subheadline">世界のじゃんけん</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 2 Bacckground.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab3.html" class="card">
+                <h2 class="headline-bab">Bab 3</h2>
+                <h2 class="subheadline">不便な駐車場</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 3 Bacckground.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab4.html" class="card">
+                <h2 class="headline-bab">Bab 4</h2>
+                <h2 class="subheadline">アナウンスと親切</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 4 Background.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab5.html" class="card">
+                <h2 class="headline-bab">Bab 5</h2>
+                <h2 class="subheadline">タイムカプセル</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 5 Background.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab6.html" class="card">
+                <h2 class="headline-bab">Bab 6</h2>
+                <h2 class="subheadline">夢の自動運転</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 6 Background.jpeg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab7.html" class="card">
+                <h2 class="headline-bab">Bab 7</h2>
+                <h2 class="subheadline-2">ギネスブックに挑戦</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 7 Background.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab8.html" class="card">
+                <h2 class="headline-bab">Bab 8</h2>
+                <h2 class="subheadline">100%の占い師</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 8 Background.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab9.html" class="card">
+                <h2 class="headline-bab">Bab 9</h2>
+                <h2 class="subheadline">やる気</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 9 Background.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab10.html" class="card">
+                <h2 class="headline-bab">Bab 10</h2>
+                <h2 class="subheadline">しょうがない</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 10 Background.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab11.html" class="card">
+                <h2 class="headline-bab">Bab 11</h2>
+                <h2 class="subheadline">いろいろな選択</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 11 Background.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab12.html" class="card">
+                <h2 class="headline-bab">Bab 12</h2>
+                <h2 class="subheadline">格言・名言</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 12 Background.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab13.html" class="card">
+                <h2 class="headline-bab">Bab 13</h2>
+                <h2 class="subheadline">子供の時の夢</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 13 Background.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab14.html" class="card">
+                <h2 class="headline-bab">Bab 14</h2>
+                <h2 class="subheadline">笑いの効果</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 14 Background.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab15.html" class="card">
+                <h2 class="headline-bab">Bab 15</h2>
+                <h2 class="subheadline">絵はがき~富士登山</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 15 Background.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab16.html" class="card">
+                <h2 class="headline-bab">Bab 16</h2>
+                <h2 class="subheadline">梅雨</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 16 Background.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab17.html" class="card">
+                <h2 class="headline-bab">Bab 17</h2>
+                <h2 class="subheadline">トリックアート</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 17 Background.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab18.html" class="card">
+                <h2 class="headline-bab">Bab 18</h2>
+                <h2 class="subheadline">行列のできる店</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 18 Background.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab19.html" class="card">
+                <h2 class="headline-bab">Bab 19</h2>
+                <h2 class="subheadline">素朴な疑問</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 19 Background.jpg" alt="Image 1" class="card-image">
+            </a>
+            <a href="Bab20.html" class="card">
+                <h2 class="headline-bab">Bab 20</h2>
+                <h2 class="subheadline-3">車のコミュニケーション</h2>
+                <h2 class="buku-head">New Approach Japanese Intermediate Course</h2>
+                <img src="bab/Bab 20 Background.jpg" alt="Image 1" class="card-image">
+            </a>
+        </div>
+            <button class="prevbtn" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="nextbtn" onclick="moveSlide(1)">&#10095;</button>
+            <button class="resetbtn" onclick="resetSlider()">&#8634;</button>
+    </div>
+    
+    <div class="ads-section">
+        <div class="ads-text">
+                <h2>Baca Dimana Saja <br> Kapanpun Kamu Mau</h2>
+                <h3>Mulai Latih Kemampuan Dokkaimu kapanpun,<br>Dimanapun lewat Device kesayanganmu <br> Bareng Dido-kun!</h3>
+                <a href="DOArtikel.html" class="btn-ads"> Mulai Membaca</a>
+        </div>
+        <div class="ads-card" id="adsImage">
+            <img id="adsImage" src="images/info section1.jpg" alt="image 2" class="ads-image">
+        </div>
+    </div>
+    <div class="fitur">
+        <div class="fitur-text">
+            <h2>Fitur</h2>
+        </div>
+    </div>
+    <div class="slider-fitur">
+        <div class="slider-container2">
+            <div class="card2" id="search-link">
+                <h2 class="headline-bab2">Dapat diakses oleh semua perangkat</h2>
+                <img src="images/fitur card1.png" alt="Image 1" class="card-image2">
+            </div>
+            <div class="card2" id="search-link">
+                <h2 class="headline-bab2">Terdapat berbagai kuis dan latihan yang dapat melatih kemampuanmu </h2>
+                <img src="images/fitur card2.png" alt="Image 1" class="card-image2">
+            </div>
+        </div>
+    </div>
+    <div class="slider-fitur">
+        <div class="slider-container2">
+            <div class="card2" id="search-link">
+                <h2 class="headline-bab2">Terdapat mode gelap <br> demi kenyamanan saat membaca</h2>
+                <img src="images/Dino-ronda-3.png" alt="Image 1" class="card-image2">
+            </div>
+            <div class="card2" id="search-link">
+                <h2 class="headline-bab2">Terhubung dengan kamus online terpercaya </h2>
+                <img src="images/Dino kamus_3.png" alt="Image 1" class="card-image2">
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-img">
+                <img src="images/Dinozilla Footer2.png" alt="">
+            </div>
+            <div class="footer-a">
+                <a href="Footer1.html">Apa itu doiku?</a>
+                <a href="Footer2.html">Tujuan</a>
+                <a href="Footer3.html">Profil</a>
+                <a href="Footer4.html">FAQ</a>
+            </div>
+            <div class="footer-p"> 
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
+            </div>
+            <div class="footer-img2">
+                <img src="images/logo doiku 2.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

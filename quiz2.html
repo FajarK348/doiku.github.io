@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doiku | Fill in the Blank Quiz</title>
+    <link rel="stylesheet" href="quiz2.css">
+</head>
+<body>
+    <div>
+    </div>
+    <div class="quiz-container">
+        <div id="question"></div>
+
+        <h1>Fill in the Blank Quiz</h1>
+        <h2>Isilah jawaban yang tepat pada kolom jawaban di setiap kalimat.</h2>
+        
+        <form id="quizForm">
+            <div class="question">
+                <label for="q1">1. タイのあいさつは、両手を <input type="text" id="q1" placeholder="Jawabanmu di sini" autocomplete="off">おじぎをします。</label>
+            </div>
+            <div class="question">
+                <label for="q2">2. 二人とも同じ「グー」を <input type="text" id="q2" placeholder="Jawabanmu di sini" autocomplete="off">たら、もう一度じゃんけんをします。
+                </label>
+            </div>
+            <div class="question">
+                <label for="q3">3. 大切な物をきれいな <input type="text" id="q3" placeholder="Jawabanmu di sini" autocomplete="off"> で包みました。
+                </label>
+            </div>
+            <div class="question">
+                <label for="q4">4. 象にはすごい力があります。木を<input type="text" id="q4" placeholder="Jawabanmu di sini" autocomplete="off">それを鼻を使って運びます。
+                </label>
+            </div>
+            <div class="question">
+                <label for="q5">5. 地図の『〒』のマークは郵便局を <input type="text" id="q5" placeholder="Jawabanmu di sini" autocomplete="off">います。
+                </label>
+            </div>
+            <button type="submit">Submit</button>
+            <div id="timer" class="timer">Time left: <span id="time">60</span> seconds</div>
+        </form>
+        <div id="result" class="result"></div>
+        <img id="celebrationImage" src="images/Dino KiraKira1.png" alt="Celebration" class="hidden">
+    </div>
+    <script src="quiz2.js"></script>
+</body>
+</html>

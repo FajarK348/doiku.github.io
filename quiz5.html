@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="quiz5.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Drag and Drop Matching Quiz</h1>
+        <h2>Susunlah kata yang rumpang dengan menarik dan meletakkan kata yang telah tersedia pada pilihan kata. <br> sehingga membentuk sebuah pernyataan yang benar</h2>
+        <div id="timer">Time Left: 15:00</div>
+        <div class="sentence">
+            The <input type="text" class="blank" placeholder="word" data-answer="cat" readonly /> climbed <input type="text" class="blank" placeholder="word" data-answer="over" readonly /> the fence.
+        </div>
+        <div class="sentence">
+            She <input type="text" class="blank" placeholder="word" data-answer="ran" readonly /> to the store to buy some milk.
+        </div>
+        <div class="sentence">
+            The sun is shining, and the flowers are <input type="text" class="blank" placeholder="word" data-answer="beautiful" readonly />.
+        </div>
+        <div class="sentence">
+            He <input type="text" class="blank" placeholder="word" data-answer="jumped" readonly /> high to catch the ball.
+        </div>
+        <div class="sentence">
+            The dog barked <input type="text" class="blank" placeholder="word" data-answer="quickly" readonly /> at the mailman.
+        </div>
+
+        <h3>Pilihan kata</h3>
+        <div id="word-bank">
+            <div class="word" draggable="true">cat</div>
+            <div class="word" draggable="true">quickly</div>
+            <div class="word" draggable="true">beautiful</div>
+            <div class="word" draggable="true">ran</div>
+            <div class="word" draggable="true">jumped</div>
+            <div class="word" draggable="true">over</div>
+        </div>
+        
+    <button id="undo-button">Undo</button>
+    <button id="submit-button">Submit</button>
+    <div id="result"></div>
+    <img id="animation" src="images/Dino KiraKira1.png" style="display:none;" alt="Submitting..." />
+    </div>
+
+
+    <script src="quiz5.js"></script>
+</body>
+</html>

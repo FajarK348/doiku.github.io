@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background: white;
+    width: 1000px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 18px;
+    color: #218838;
+}
+
+#options {
+    margin: 20px 0;
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: space-around; /* Space between columns */
+}
+
+label {
+    display: block;
+    flex: 0 45%; /* Each button takes up about half the width */
+    padding: 10px 15px; /* Padding for button appearance */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin: 5px 0; /* Margin for spacing */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: white; /* Default background color */
+    color: #218838; /* Default text color */
+    text-align: center; /* Center text in the button */
+    font-family: Plus Jakarta Sans;
+}
+
+input[type="radio"] {
+    display: none; /* Hide the radio button */
+}
+
+.selected {
+    background-color: #218838; /* Change to your desired color */
+    color: white; /* Change border color for selected option */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#result {
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#illustration {
+    margin-top: 20px;
+    width: 20%;
+}
+
+#timer {
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #d9534f; /* Red color for the timer */
+}
+
+.resultanswer img {
+    width: 300px;
+    display: none; /* Hide images initially */
+    animation: easeIn 1s forwards; /* 1 second fade-in */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for the transform */
+    position: absolute;
+    left: -0px;
+    bottom: 0px;
+}
+
+.show {
+    display: block; /* Show the image */
+    transform: translateX(0); /* Reset position */
+}
+
+.animate {
+    transform: translateX(-80px); /* Move the image to the right */
+}
+
+.result-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Ensure it appears above other content */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.result-card.show {
+    display: block; /* Show the card */
+    opacity: 1; /* Fade in */
+    transform: translate(-50%, -50%) scale(1.05); /* Slightly scale up */
+}
+
+.result-card.hide {
+    opacity: 0; /* Fade out */
+    transform: translate(-50%, -50%) scale(0.95); /* Slightly scale down */
+}
+
+.dark {
+    height: 40px;
+    width: 40px;
+    margin-top: 0px;
+    margin-left: 60px;
+    padding: 0px;
+    border-radius: 100%;
+    background-color: #089E3B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .dark svg{
+    fill: white;
+  }
+  
+  .dark svg:last-child{
+    display: none;
+  }
+  
+  .dark-mode .dark svg:first-child{
+    display: none;
+  }
+  
+  .dark-mode .dark svg:last-child{
+    display: block;
+  }
+
+  .dark-mode .search-button svg {
+    fill: white;
+  }
+
+  .dark-mode .logo {
+    width: 92px;
+    height: 25px;
+    margin: 34px;
+    margin-bottom: 37px;
+}
+
+body.dark-mode .quiz-container {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+    background-color: #021923;
+    box-shadow: 0 0 18px rgb(195, 228, 206);
+}
+
+body.dark-mode {
+    background-color: #021923;
+    color: black;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode label {
+    color: #089E3B;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .nav a {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body .nav li a:hover {
+    color: #089E3B;
+    transition: 0.2s ease-in-out;
+}
+
+body.dark-mode .content-home p {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .slider p {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .card:hover::after {
+    background: linear-gradient(to top, rgba(2, 25, 35, 1), transparent);
+}
+
+body.dark-mode .ads-section {
+    background-color: #021923;
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .fitur {
+    background-color: #021923;
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .fitur h2 {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .ads-section .btn-ads:hover {
+    background-color: #089E3B;
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}

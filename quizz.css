@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-around;
+    padding: 22px 0;
+    align-items: center;
+    height: 10px;
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 180px;
+    height: 100px;
+    margin: -10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    padding: 6px;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    color: #089E3B;
+    border: 2px solid #089E3B;
+    border-radius: 16px;
+    width: 400px;
+}
+
+
+#search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.search-button svg {
+    fill: #3B3C36;
+}
+
+#search-button img {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 22%;
+    color: black;
+    justify-content: space-evenly;
+    font-size: 12px;
+    font-family: Plus Jakarta Sans;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    cursor: default;
+}
+
+li a:hover {
+    color: #089E3B;
+    transition: 0.2s ease-in-out;
+}
+
+.suggestions {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    width: 200px;
+}
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        margin-top: 60px;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    .search-container {
+        margin-left: -10px;
+        width: 60%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .searchTerm {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.dark {
+    height: 40px;
+    width: 40px;
+    margin-top: 0px;
+    margin-left: 60px;
+    padding: 0px;
+    border-radius: 100%;
+    background-color: #089E3B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .dark svg{
+    fill: white;
+  }
+  
+  .dark svg:last-child{
+    display: none;
+  }
+  
+  .dark-mode .dark svg:first-child{
+    display: none;
+  }
+  
+  .dark-mode .dark svg:last-child{
+    display: block;
+  }
+
+  .dark-mode .search-button svg {
+    fill: white;
+  }
+
+  .dark-mode .logo {
+    width: 92px;
+    height: 25px;
+    margin: 34px;
+    margin-bottom: 37px;
+}
+
+body.dark-mode .search-container {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode {
+    background-color: #021923;
+    color: black;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .nav {
+    background-color: #021923;
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .nav a {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body .nav li a:hover {
+    color: #089E3B;
+    transition: 0.2s ease-in-out;
+}
+
+body.dark-mode .content-home p {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .slider p {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .card:hover::after {
+    background: linear-gradient(to top, rgba(2, 25, 35, 1), transparent);
+}
+
+body.dark-mode .ads-section {
+    background-color: #021923;
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .fitur {
+    background-color: #021923;
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .fitur h2 {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .ads-section .btn-ads:hover {
+    background-color: #089E3B;
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .quiz-card {
+    background-color: #021923;
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+body.dark-mode .quiz-card h1 {
+    color: white;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+
+.quiz-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: 80px 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 18px rgb(195, 228, 206);
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+}
+
+.quiz-card h1 {
+    color: #089E3B;
+    font-family: Plus Jakarta Sans;
+    font-size: 28px;
+    margin-top: 20px;
+    cursor: default;
+}
+
+.quiz {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: none;
+    max-width: 800px;
+    padding: 20px;
+    color: white;
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+}
+
+.quiz a {
+    min-width: 350px; /* Width of each card */
+    height: 100px; /* Height of each card */
+    background-color: #f1f1f1;
+    margin: 10px 10px 10px ;
+    position: relative; /* Position relative for absolute positioning of headline */
+    overflow: hidden; /* Hide overflow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-direction: column;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease; box-shadow 0.3s ease;
+}
+
+.card-image2 {
+    width: 100%; /* Make image fill the card */
+    height: 100%; /* Make image fill the card */
+    object-fit: cover; /* Cover the card without distortion */
+    flex-grow: 1; /* Allow the image to grow and fill available space */
+}
+
+.headline-bab2 {
+    position: absolute; /* Position headline over the image */
+    top: 15px; /* Align to the bottom of the card */
+    left: 30px; /* Align to the left*/
+    color: white; /* Text color */
+    padding: 5px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners for the headline */
+    z-index: 2; /* Ensure the headline is above the image */
+    font-family:  Plus Jakarta Sans;
+    font-size: 24px;
+}
