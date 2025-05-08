@@ -5,66 +5,66 @@ function searchHTML() {
     // Define your search logic here
     switch (searchInput) {
         case 'bab 1':
-                case 'BAB 1':
-                case '色のイメージ':
-                case '色':
-                case '色の':
-                case 'イメージ':
-                case 'iro no imeeji':
-                case 'iro':
-                case 'iro no':
-                case 'imeeji':
-                    targetFile = 'Bab1.html'; // Targeting HTML in a different directory
-                    break;
-                case 'bab 2':
-                case 'BAB 2':
-                case '世界のじゃんけん':
-                case '世界':
-                case '世界の':
-                case 'じゃんけん':
-                case 'sekai no janken':
-                case 'sekai':
-                case 'sekai no':
-                case 'janken':
-                    targetFile = 'Bab2.html'; // Targeting HTML in a different directory
-                    break;
-                case 'bab 3':
-                case 'BAB 3':
-                case '不便な駐車場':
-                case '不便な':
-                case '駐車場':
-                case 'fubenna chuushajou':
-                case 'fubenna':
-                case 'chuushajou':
-                    targetFile = 'Bab3.html'; // Targeting HTML in a different directory
-                    break;
-                case 'bab 4':
-                case 'BAB 4':
-                case 'アナウンスと親切':
-                case 'アナウンス':
-                case '親切':
-                case 'anaunsu':
-                case 'anaunsu to shinsetsu':
-                    targetFile = 'Bab4.html'; // Targeting HTML in a different directory
-                    break;
-                case 'bab 5':
-                case 'BAB 5':
-                case 'タイムカプセル':
-                case 'taimukapuseru':
-                case 'time capsule':
-                    targetFile = 'Bab5.html'; // Targeting HTML in a different directory
-                    break;
-                case 'bab 6':
-                case 'BAB 6':
-                case '夢の自動運転':
-                case '夢':
-                case '夢の':
-                case '自動運転':
-                case 'yume no jidouunten':
-                case 'yume':
-                case 'jidouunten':
-                    targetFile = 'Bab6.html'; // Targeting HTML in a different directory
-                    break;
+        case 'BAB 1':
+        case '色のイメージ':
+        case '色':
+        case '色の':
+        case 'イメージ':
+        case 'iro no imeeji':
+        case 'iro':
+        case 'iro no':
+        case 'imeeji':
+            targetFile = 'Bab1.html'; // Targeting HTML in a different directory
+            break;
+        case 'bab 2':
+        case 'BAB 2':
+        case '世界のじゃんけん':
+        case '世界':
+        case '世界の':
+        case 'じゃんけん':
+        case 'sekai no janken':
+        case 'sekai':
+        case 'sekai no':
+        case 'janken':
+            targetFile = 'Bab2.html'; // Targeting HTML in a different directory
+            break;
+        case 'bab 3':
+        case 'BAB 3':
+        case '不便な駐車場':
+        case '不便な':
+        case '駐車場':
+        case 'fubenna chuushajou':
+        case 'fubenna':
+        case 'chuushajou':
+            targetFile = 'Bab3.html'; // Targeting HTML in a different directory
+            break;
+        case 'bab 4':
+        case 'BAB 4':
+        case 'アナウンスと親切':
+        case 'アナウンス':
+        case '親切':
+        case 'anaunsu':
+        case 'anaunsu to shinsetsu':
+            targetFile = 'Bab4.html'; // Targeting HTML in a different directory
+            break;
+        case 'bab 5':
+        case 'BAB 5':
+        case 'タイムカプセル':
+        case 'taimukapuseru':
+        case 'time capsule':
+            targetFile = 'Bab5.html'; // Targeting HTML in a different directory
+            break;
+        case 'bab 6':
+        case 'BAB 6':
+        case '夢の自動運転':
+        case '夢':
+        case '夢の':
+        case '自動運転':
+        case 'yume no jidouunten':
+        case 'yume':
+        case 'jidouunten':
+            targetFile = 'Bab6.html'; // Targeting HTML in a different directory
+            break;
                 case 'bab 7':
                 case 'BAB 7':
                 case 'ギネスブックに挑戦':
