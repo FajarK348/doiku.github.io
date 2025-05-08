@@ -39,7 +39,7 @@ function searchHTML() {
         case 'fubenna chuushajou':
         case 'fubenna':
         case 'chuushajou':
-            targetFile = 'bab3.html'; // Targeting HTML in a different directory
+            targetFile = 'Bab3.html'; // Targeting HTML in a different directory
             break;
         case 'bab 4':
         case 'BAB 4':
