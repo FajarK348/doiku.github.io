@@ -1,5 +1,5 @@
 function searchHTML() {
-    const searchInput = document.getElementById('search-input').value.toLowerCase(); // Convert input to lowercase
+    const searchInput = document.getElementById('search-input').value.toLocaleLowerCase(); // Convert input to lowercase
     let targetFile = '';
 
     // Define your search logic here
