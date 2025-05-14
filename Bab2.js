@@ -65,83 +65,83 @@ function searchHTML() {
         case 'jidouunten':
             targetFile = 'Bab6.html'; // Targeting HTML in a different directory
             break;
-                case 'bab 7':
-                case 'BAB 7':
-                case 'ギネスブックに挑戦':
-                case 'ギネスブック':
-                case '挑戦':
-                case 'ginesubukku ni chousen':
-                case 'chousen':
-                case 'ginesubukku':
-                case 'guiness book':
-                    targetFile = 'Bab7.html'; // Targeting HTML in a different directory
-                    break;
-                case 'bab 8':
-                case 'BAB 8':
-                case '100%の占い師':
-                case '100%の':
-                case '占い師':
-                case '100% no uranaishi':
-                case '100%':
-                case 'uranaishi':
-                    targetFile = 'Bab8.html'; // Targeting HTML in a different directory
-                    break;
-                case 'bab 9':
-                case 'BAB 9':
-                case 'やる気':
-                case 'yaruki':
-                    targetFile = 'Bab9.html'; // Targeting HTML in a different directory
-                    break;
-                case 'bab 10':
-                case 'BAB 10':
-                case 'しょうがない':
-                case 'shouganai':
-                    targetFile = 'Bab10.html'; // Targeting HTML in a different directory
-                    break;
-                case 'bab 11':
-                case 'BAB 11':
-                case 'いろいろな選択':
-                case 'いろいろな':
-                case '選択':
-                case 'iroirona sentaku':
-                case 'iroirona':
-                case 'sentaku':
-                    targetFile = 'Bab11.html'; // Targeting HTML in a different directory
-                    break;
-                case 'bab 12':
-                case 'BAB 12':
-                case '格言・名言':
-                case '格言':
-                case '名言':
-                case 'kakugen meigen':
-                case 'kakugen':
-                case 'meigen':
-                    targetFile = 'Bab12.html'; // Targeting HTML in a different directory
-                    break;
-                    case 'bab 13':
-                    case 'BAB 13':
-                    case 'bab13':
-                    case '子供の時の夢':
-                    case '子供':
-                    case '時':
-                    case '夢':
-                    case 'kodomo no toki no yume':
-                    case 'kodomo':
-                    case 'toki':
-                    case 'yume':
-                        targetFile = 'Bab13.html'; // Targeting HTML in a different directory
-                        break;
-                    case 'bab 14':
-                    case 'BAB 14':
-                    case 'bab14':
-                    case '笑いの効果':
-                    case '笑い':
-                    case '効果':
-                    case 'warai no kouka':
-                    case 'warai':
-                    case 'kouka':
-                        targetFile = 'Bab14.html'; // Targeting HTML in a different directory
-                        break;
+        case 'bab 7':
+        case 'BAB 7':
+        case 'ギネスブックに挑戦':
+        case 'ギネスブック':
+        case '挑戦':
+        case 'ginesubukku ni chousen':
+        case 'chousen':
+        case 'ginesubukku':
+        case 'guiness book':
+            targetFile = 'Bab7.html'; // Targeting HTML in a different directory
+            break;
+        case 'bab 8':
+        case 'BAB 8':
+        case '100%の占い師':
+        case '100%の':
+        case '占い師':
+        case '100% no uranaishi':
+        case '100%':
+        case 'uranaishi':
+            targetFile = 'Bab8.html'; // Targeting HTML in a different directory
+            break;
+        case 'bab 9':
+        case 'BAB 9':
+        case 'やる気':
+        case 'yaruki':
+            targetFile = 'Bab9.html'; // Targeting HTML in a different directory
+            break;
+        case 'bab 10':
+        case 'BAB 10':
+        case 'しょうがない':
+        case 'shouganai':
+            targetFile = 'Bab10.html'; // Targeting HTML in a different directory
+            break;
+        case 'bab 11':
+        case 'BAB 11':
+        case 'いろいろな選択':
+        case 'いろいろな':
+        case '選択':
+        case 'iroirona sentaku':
+        case 'iroirona':
+        case 'sentaku':
+            targetFile = 'Bab11.html'; // Targeting HTML in a different directory
+            break;
+        case 'bab 12':
+        case 'BAB 12':
+        case '格言・名言':
+        case '格言':
+        case '名言':
+        case 'kakugen meigen':
+        case 'kakugen':
+        case 'meigen':
+            targetFile = 'Bab12.html'; // Targeting HTML in a different directory
+            break;
+        case 'bab 13':
+        case 'BAB 13':
+        case 'bab13':
+        case '子供の時の夢':
+        case '子供':
+        case '時':
+        case '夢':
+        case 'kodomo no toki no yume':
+        case 'kodomo':
+        case 'toki':
+        case 'yume':
+            targetFile = 'Bab13.html'; // Targeting HTML in a different directory
+            break;
+        case 'bab 14':
+        case 'BAB 14':
+        case 'bab14':
+        case '笑いの効果':
+        case '笑い':
+        case '効果':
+        case 'warai no kouka':
+        case 'warai':
+        case 'kouka':
+            targetFile = 'Bab14.html'; // Targeting HTML in a different directory
+            break;
                     case 'bab 15':
                     case 'BAB 15':
                     case 'bab15':
