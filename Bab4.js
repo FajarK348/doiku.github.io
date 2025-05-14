@@ -1,5 +1,5 @@
 function searchHTML() {
-    const searchInput = document.getElementById('search-input').value.toLocaleLowerCase(); // Convert input to lowercase
+    const searchInput = document.getElementById('search-input').value.toLowerCase(); // Convert input to lowercase
     let targetFile = '';
 
     // Define your search logic here
@@ -14,8 +14,8 @@ function searchHTML() {
         case 'iro':
         case 'iro no':
         case 'imeeji':
-            targetFile = 'Bab1.html'; // Targeting HTML in a different directory
-            break;
+                targetFile = 'Bab1.html'; // Targeting HTML in a different directory
+                break;
         case 'bab 2':
         case 'BAB 2':
         case '世界のじゃんけん':
