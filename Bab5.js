@@ -1,5 +1,5 @@
 function searchHTML() {
-    const searchInput = document.getElementById('search-input').value.toLocaleLowerCase(); // Convert input to lowercase
+    const searchInput = document.getElementById('search-input').value.toLowerCase(); // Convert input to lowercase
     let targetFile = '';
 
     // Define your search logic here
@@ -26,8 +26,8 @@ function searchHTML() {
         case 'sekai':
         case 'sekai no':
         case 'janken':
-                targetFile = 'Bab2.html'; // Targeting HTML in a different directory
-                break;
+            targetFile = 'Bab2.html'; // Targeting HTML in a different directory
+            break;
         case 'bab 3':
         case 'BAB 3':
         case '不便な駐車場':
@@ -211,8 +211,8 @@ function searchHTML() {
         case 'kuruma no komyunikeeshon':
         case 'kuruma':
         case 'komyunikeeshon':
-                targetFile = 'Bab20.html'; // Targeting HTML in a different directory
-                break;
+            targetFile = 'Bab20.html'; // Targeting HTML in a different directory
+            break;
         default:
             alert('File not found. Please try again.');
             return;
