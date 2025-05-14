@@ -211,8 +211,8 @@ function searchHTML() {
         case 'kuruma no komyunikeeshon':
         case 'kuruma':
         case 'komyunikeeshon':
-            targetFile = 'Bab20.html'; // Targeting HTML in a different directory
-            break;
+                targetFile = 'Bab20.html'; // Targeting HTML in a different directory
+                break;
         default:
             alert('File not found. Please try again.');
             return;
