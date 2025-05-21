@@ -236,7 +236,8 @@ document.getElementById('search-button').addEventListener('click', function() {
 
 function checkAnswers() {
     const answers = {
-        q1: "不思議な",
+        q1a: "不思議な",
+        q1b: "不思議な",
         q2: "思い切り",
         q3: "隠す",
         q4: "限って",
