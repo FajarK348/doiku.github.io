@@ -166,6 +166,10 @@ body.dark-mode .quiz-container {
     background-color: #021923;
 }
 
+body.dark-mode .quiz-container h2 {
+    color: #5fb07a;
+}
+
 body.dark-mode {
     background-color: #021923;
     color: black;
