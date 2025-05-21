@@ -259,14 +259,14 @@ function checkAnswers() {
                 const userAnswerA = document.getElementById('q4a').value.trim();
                 const answerDivA = document.createElement("div");
                 answerDivA.className = userAnswerA.toLowerCase() === answers.q4a.toLowerCase() ? "correct" : "incorrect";
-                answerDivA.innerHTML = `4a. Your answer: "${userAnswerA}"`;
+                answerDivA.innerHTML = `4a. Jawabanmu: "${userAnswerA}"`;
                 resultDiv.appendChild(answerDivA);
             }
             if (key === 'q4b') {
                 const userAnswerB = document.getElementById('q4b').value.trim();
                 const answerDivB = document.createElement("div");
                 answerDivB.className = userAnswerB.toLowerCase() === answers.q4b.toLowerCase() ? "correct" : "incorrect";
-                answerDivB.innerHTML = `4b. Your answer: "${userAnswerB}"`;
+                answerDivB.innerHTML = `4b. Jawabanmu: "${userAnswerB}"`;
                 resultDiv.appendChild(answerDivB);
             }
             continue; // Skip to the next iteration for the next question
@@ -276,14 +276,14 @@ function checkAnswers() {
                 const userAnswerA = document.getElementById('q6a').value.trim();
                 const answerDivA = document.createElement("div");
                 answerDivA.className = userAnswerA.toLowerCase() === answers.q6a.toLowerCase() ? "correct" : "incorrect";
-                answerDivA.innerHTML = `6a. Your answer: "${userAnswerA}"`;
+                answerDivA.innerHTML = `6a. Jawabanmu: "${userAnswerA}"`;
                 resultDiv.appendChild(answerDivA);
             }
             if (key === 'q6b') {
                 const userAnswerB = document.getElementById('q6b').value.trim();
                 const answerDivB = document.createElement("div");
                 answerDivB.className = userAnswerB.toLowerCase() === answers.q6b.toLowerCase() ? "correct" : "incorrect";
-                answerDivB.innerHTML = `6b. Your answer: "${userAnswerB}"`;
+                answerDivB.innerHTML = `6b. Jawabanmu: "${userAnswerB}"`;
                 resultDiv.appendChild(answerDivB);
             }
             continue; // Skip to the next iteration for the next question
@@ -293,7 +293,7 @@ function checkAnswers() {
 
             const answerDiv = document.createElement("div");
             answerDiv.className = isCorrect ? "correct" : "incorrect";
-            answerDiv.innerHTML = ` ${key.charAt(1)}. Your answer: "${userAnswer}"`;
+            answerDiv.innerHTML = ` ${key.charAt(1)}. Jawabanmu: "${userAnswer}"`;
             resultDiv.appendChild(answerDiv);
         }
     }
