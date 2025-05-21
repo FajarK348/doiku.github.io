@@ -236,14 +236,13 @@ document.getElementById('search-button').addEventListener('click', function() {
 
 function checkAnswers() {
     const answers = {
-        q1: "不思議な",
-        q2: "思い切り",
-        q3: "隠す",
-        q4: "限って",
-        q5: "どうやら",
-        q6: "働き",
-        q7: "苦手",
-        q8: "高まって",
+        q1: "すれ違う",
+        q2: "誤解",
+        q3: "無理に",
+        q4: "とって",
+        q5: "譲る",
+        q6: "合図",
+        q7: "身につけ",
     };
 
     const resultDiv = document.getElementById("result");
