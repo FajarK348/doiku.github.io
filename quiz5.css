@@ -242,6 +242,14 @@ body.dark-mode .quiz-container {
     box-shadow: 0 0 18px rgb(195, 228, 206);
 }
 
+body.dark-mode .quiz-container h2 {
+    color: #5fb07a;
+}
+
+body.dark-mode .quiz-container h3 {
+    color: #5fb07a;
+}
+
 body.dark-mode {
     background-color: #021923;
     color: black;
