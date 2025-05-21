@@ -132,7 +132,7 @@ li a:hover {
 }
 
 .image-section {
-    flex: 0.5;
+    flex: 0.7;
     position: relative;
 }
 .image-section img {
@@ -459,6 +459,12 @@ textarea {
     box-shadow: 0 0 18px rgb(195, 228, 206);
     font-family: Plus Jakarta Sans;
     font-size: 20px;
+}
+
+.tangonoimi img {
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: -30px;
 }
 
 .choice {
