@@ -278,7 +278,7 @@ nav {
 
 #search-input {
     padding: 6px;
-    font-family: Plus Jakarta Sans;
+    font-family: var(--font-family);
     font-size: 14px;
     color: var(--input-color);
     border: 2px solid #089E3B;
@@ -308,7 +308,7 @@ nav ul {
     color: var(--text-color);
     justify-content: space-evenly;
     font-size: 12px;
-    font-family: Plus Jakarta Sans;
+    font-family: var(--font-family);
 }
 
 nav ul li a {
@@ -394,7 +394,7 @@ li a:hover {
     z-index: 1;
     margin-top: 20px;
     margin-left: 20px;
-    font-family: Plus Jakarta Sans;
+    font-family: var(--font-family);
 }
 .text-section h1 {
     font-size: 32px;
@@ -593,7 +593,7 @@ body.dark-mode .incorrect {
     font-weight: 400;
     justify-content: start;
     align-items: start;
-    font-family: Plus Jakarta Sans;
+    font-family: var(--font-family);
     margin-top: 10px;
 }
 
@@ -646,7 +646,7 @@ body.dark-mode .incorrect {
 .kotoba-btn {
     text-align: center;
     background-color: var(--base-color);
-    font-family: Plus Jakarta Sans;
+    font-family: var(--font-family);
     font-weight: 600;
     color: var(--kotoba-color);
     padding: 6px 20px 4px;
@@ -666,7 +666,7 @@ body.dark-mode .incorrect {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 18px rgb(195, 228, 206);
-    font-family: Plus Jakarta Sans;
+    font-family: var(--font-family);
     font-size: 20px;
 }
 
@@ -689,7 +689,7 @@ textarea {
     border-radius: 5px;
     margin-bottom: 10px;
     resize: none;
-    font-family: Plus Jakarta Sans;
+    font-family: var(--font-family);
     font-size: 16px;
     color: var(--text-color);
 }
@@ -701,7 +701,7 @@ textarea {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 18px rgb(195, 228, 206);
-    font-family: Plus Jakarta Sans;
+    font-family: var(--font-family);
     font-size: 20px;
     color: var(--text-color);
 }
@@ -753,7 +753,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: Plus Jakarta Sans;
+    font-family: var(--font-family);
     font-size: 14px;
 }
 
@@ -782,7 +782,7 @@ button:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 18px rgb(195, 228, 206);
-    font-family: Plus Jakarta Sans;
+    font-family: var(--font-family);
     font-size: 20px;
     color: var(--text-color);
 }
@@ -852,7 +852,7 @@ button:hover {
     margin-right: 100px;
     background-color: var(--background-button);
     color: var(--headline-color);
-    font-family: Plus Jakarta Sans;
+    font-family: var(--font-family);
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
@@ -871,7 +871,7 @@ button:hover {
 .nextbab {
     text-align: center;
     background-color: var(--background-button);
-    font-family: Plus Jakarta Sans;
+    font-family: var(--font-family);
     font-size: 10px;
     font-weight: 600;
     color: var(--headline-color);
@@ -934,7 +934,7 @@ footer {
 
 
 .footer a{
-  font-family: Plus Jakarta Sans;
+  font-family: var(--font-family);
   font-weight: 600;
   font-size: 20px;
   color: white;
@@ -947,7 +947,7 @@ footer {
 }
 
 .footer-p{
-  font-family: Plus Jakarta Sans;
+  font-family: var(--font-family);
   font-weight: 600;
   font-size: 14px;
   color: white;
