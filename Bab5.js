@@ -256,7 +256,7 @@ function checkAnswers() {
         
         const answerDiv = document.createElement("div");
         answerDiv.className = isCorrect ? "correct" : "incorrect";
-        answerDiv.innerHTML = ` ${key.charAt(1)}. Your answer: "${userAnswer}"`;
+        answerDiv.innerHTML = ` ${key.charAt(1)}. Jawabanmu: "${userAnswer}"`;
         
         resultDiv.appendChild(answerDiv);
     }
