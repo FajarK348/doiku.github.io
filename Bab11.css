@@ -460,6 +460,12 @@ textarea {
     font-size: 20px;
 }
 
+.tangonoimi img {
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: -30px;
+}
+
 .choice {
     word-spacing: 20px;
     margin: 20px;
