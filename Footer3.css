@@ -419,7 +419,7 @@ body.dark-mode .ads-section .btn-ads:hover {
 .images2 img {
     width: 400px;
     height: auto;
-    transform: scaleX(-1);
+    transform: scaleX(1);
     margin-top: 80px;
     margin-left: 40px;
 }
