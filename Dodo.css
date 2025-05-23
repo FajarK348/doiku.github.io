@@ -709,11 +709,11 @@ button:hover {
 }
 
 .fitur h2 {
-    text-align: end;
+    text-align: start;
     font-size: 46px; /* Font size for the heading */
     margin-top: 0px;
     margin-bottom: 20px; /* Space below the heading */
-    margin-right: 80px;
+    margin-left: 100px;
     font-family: Plus Jakarta Sans;
     color: #00a651;
 }
