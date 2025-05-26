@@ -620,6 +620,37 @@ button:hover {
     justify-content: space-between;
     color: green;
 }
+.kiribtn {
+    margin-top: 10px;
+}
+.backhomebtn {
+    background-color: #00a651;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    color: white;
+    padding: 20px 26px;
+    border: none;
+    border-radius: 40px;
+    font-size: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: -20px;
+    z-index: 1;
+    flex: ;
+}
+
+.backhomebtn img{
+    position: absolute;
+    transform: translateX(-12px) scale(1.1); 
+}
+
+.backhomebtn:hover {
+    background-color: #218838; /* Change background on hover */
+    color: white;
+    border: none;
+}
 
 .prevbab {
     text-align: center;
