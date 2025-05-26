@@ -357,7 +357,7 @@ const englishText10 = "Artikel";
 const japaneseText10= "読み物";
 
 const englishText11 = "Lainnya";
-const japaneseText11= "他に";
+const japaneseText11= "他";
 
 const englishPlaceholder1 = "Ingin baca apa hari ini";
 const japanesePlaceholder1 = "あなたの答えはこちらです";
