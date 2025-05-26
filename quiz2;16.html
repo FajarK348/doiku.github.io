@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doiku | Fill in the Blank Quiz</title>
+    <link rel="stylesheet" href="quiz2;16.css">
+</head>
+<body>
+    <div>
+    </div>
+    <div class="quiz-container">
+        <div id="question"></div>
+
+        <h1>Fill in the Blank Quiz</h1>
+        <h2>Lengkapi kalimat rumpang di bawah ini dengan kosakata yang tepat dan disesuaikan dengan konteks kalimat.</h2>
+        
+        <form id="quizForm">
+            <div class="question">
+                <label for="q1">1. 日本列島は南北に細長いため、地方によって梅雨の時期も雨量も。<input type="text" id="q1" placeholder="Jawabanmu di sini" autocomplete="off"></label>
+            </div>
+            <div class="question">
+                <label for="q2">2. 確かに<input type="text" id="q2" placeholder="Jawabanmu di sini" autocomplete="off">はしとしととよく雨が降るのだが、ときどき夏のような青空が広がることもある。
+                </label>
+            </div>
+            <div class="question">
+                <label for="q3">3. 雨は大切な水資源なので、雨があまり降らないと<input type="text" id="q3" placeholder="Jawabanmu di sini" autocomplete="off"> の水不足が心配になる。
+                </label>
+            </div>
+            <div class="question">
+                <label for="q4">4. 梅雨のうちは気分も<input type="text" id="q4" placeholder="Jawabanmu di sini" autocomplete="off">になるが、この発表があるとそんな気分も晴れる。
+                </label>
+            </div>
+            <div class="question">
+                <label for="q5">5. いつ明けるかによって、商品の生産量や出荷の時期が大きく<input type="text" id="q5" placeholder="Jawabanmu di sini" autocomplete="off">からだ。。
+                </label>
+            </div>
+            <button type="submit">Submit</button>
+            <div id="timer" class="timer">Time left: <span id="time">60</span> seconds</div>
+        </form>
+        <div id="result" class="result"></div>
+        <img id="celebrationImage" src="images/Dino KiraKira1.png" alt="Celebration" class="hidden">
+    </div>
+    <div class="btnbab">
+        <div class="kiribtn">
+            <button id="previousBtn" aria-label="Go to previous page" class="prevbtn ">&#10094;</button>
+        </div>
+    </div>
+    <script src="quiz2;16.js"></script>
+</body>
+</html>
