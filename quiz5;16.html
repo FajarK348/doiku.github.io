@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="quiz5;16.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Drag and Drop Matching Quiz</h1>
+        <h2>Susunlah kalimat rumpang di bawah ini dengan cara menggeser dan meletakkan pilihan kata yang telah tersedia <br> ke dalam kolom pada kalimat rumpang, sehingga membentuk sebuah pernyataan yang benar</h2>
+        <div id="timer">Time Left: 15:00</div>
+        <div class="sentence">
+            北海道には<input type="text" class="blank" placeholder="word" data-answer="梅雨" readonly /> がない。
+        </div>
+        <div class="sentence">
+            ところで、毎年気象庁から梅雨明けが<input type="text" class="blank" placeholder="word" data-answer="発表" readonly /> される。
+        </div>
+        <div class="sentence">
+            ときどき夏のような。<input type="text" class="blank" placeholder="word" data-answer="青空" readonly />が広がることもある。
+        </div>
+        <div class="sentence">
+            ふとんまた、梅雨の間は<input type="text" class="blank" placeholder="word" data-answer="湿度" readonly />が高くなります。
+        </div>
+        <div class="sentence">
+            ビールはその影響をかなり受ける<input type="text" class="blank" placeholder="word" data-answer="商品" readonly /> の1つだそうだ。
+        </div>
+
+        <h3>Pilihan kata</h3>
+        <div id="word-bank">
+            <div class="word" draggable="true">梅雨</div>
+            <div class="word" draggable="true">商品</div>
+            <div class="word" draggable="true">青空</div>
+            <div class="word" draggable="true">発表</div>
+            <div class="word" draggable="true">湿度</div>
+        </div>
+        
+    <button id="undo-button">Undo</button>
+    <button id="submit-button">Submit</button>
+    <div id="result"></div>
+    <img id="animation" src="images/Dino KiraKira1.png" style="display:none;" alt="Submitting..." />
+    </div>
+    <div class="btnbab">
+        <div class="kiribtn">
+            <button id="previousBtn" aria-label="Go to previous page" class="prevbtn ">&#10094;</button>
+        </div>
+    </div>
+
+    <script src="quiz5;16.js"></script>
+</body>
+</html>
