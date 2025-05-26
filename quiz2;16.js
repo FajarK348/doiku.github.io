@@ -1,4 +1,4 @@
-let timeLeft = 900; // Set the timer for 60 seconds
+let timeLeft = 300; // Set the timer for 60 seconds
 const timerElement = document.getElementById('time');
 const quizForm = document.getElementById('quizForm');
 const resultDiv = document.getElementById('result');
