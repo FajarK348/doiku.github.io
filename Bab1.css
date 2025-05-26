@@ -963,7 +963,7 @@ button:hover {
 
 .btnbab {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     color: var(--background-button);
     margin-top: 40px;
 }
