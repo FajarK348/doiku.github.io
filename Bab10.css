@@ -432,6 +432,63 @@ body.dark-mode .quiz-container p {
     margin-bottom: 10px;
 }
 
+/* Toggle Switch */
+  .switchnav {
+    display: flex;
+    margin-left: 20px;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+
+  input:checked + .slider {
+    background-color: #00a651;
+  }
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  /* Label next to switch */
+  .switch-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-top: 6px;
+    font-family: plus jakarta sans;
+    font-weight: 600;
+    font-size: 16px;
+    user-select: none;
+    cursor: pointer;
+  } 
+
+
 .shitsumon {
     font-size: 20px;
     margin-bottom: 10px;
@@ -532,6 +589,41 @@ button:hover {
     color: red;
 }
 
+.indicator {
+  display: flex;
+  justify-content: start;
+  margin: 20px 0; /* Space between the title and images */
+}
+
+.green-indi {
+  background-color: green;
+  padding: 15px 15px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.red-indi {
+  background-color: red;
+  padding: 15px 15px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.green-p {
+  color: green;
+  font-family: plus jakarta sans;
+  font-weight: 600;
+  margin-left: 10px; /* Space between the title and images */
+}
+
+.red-p {
+  color: red;
+  font-family: plus jakarta sans;
+  font-weight: 600;
+  margin-left: 10px; /* Space between the title and images */
+}
+
+
 .quiz-container {
     max-width: 1200px;
     position: relative;
@@ -542,6 +634,14 @@ button:hover {
     box-shadow: 0 0 18px rgb(195, 228, 206);
     font-family: Plus Jakarta Sans;
     font-size: 20px;
+}
+
+.text-trans6{
+  margin-left:10px ;
+  font-family: Plus Jakarta Sans;
+  font-weight: 600;
+  font-size: 38px;
+  color: var(--text-color);
 }
 
 .overlay-images {
@@ -634,7 +734,41 @@ button:hover {
 .btnbab {
     display: flex;
     justify-content: space-between;
-    color: green;
+    color: var(--background-button);
+    margin-top: 40px;
+}
+
+.kiribtn {
+    margin-top: 10px;
+}
+
+.backhomebtn {
+    background-color: #00a651;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    color: white;
+    padding: 20px 26px;
+    border: none;
+    border-radius: 40px;
+    font-size: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: -20px;
+    z-index: 1;
+    flex: ;
+}
+
+.backhomebtn img{
+    position: absolute;
+    transform: translateX(-12px) translateY(-5px) scale(1.1); 
+}
+
+.backhomebtn:hover {
+    background-color: #218838; /* Change background on hover */
+    color: white;
+    border: none;
 }
 
 .prevbab {
