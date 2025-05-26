@@ -301,87 +301,87 @@ const paragraphContent = "好きな色は人によって違います。好きな
 
 
 const toggleCheckbox = document.getElementById('language-toggle');
-    const textContent = document.getElementById('text-trans');
-    const textContent1 = document.getElementById('text-trans1');
-    const textContent2 = document.getElementById('text-trans2');
-    const textContent3 = document.getElementById('text-trans3');
-    const textContent6 = document.getElementById('text-trans6');
-    const textContent7 = document.getElementById('text-trans7');
-    const textContent8 = document.getElementById('text-trans8');
-    const textContent9 = document.getElementById('li1');
-    const textContent10 = document.getElementById('li2');
-    const textContent11 = document.getElementById('li3');
-    const textContent4 = document.getElementById('greenp');
-    const textContent5 = document.getElementById('redp');
-    const nameInput1 = document.getElementById('search-input');
-    const nameInput = document.getElementById('q1');
-    const nameInput2 = document.getElementById('q2');
-    const nameInput3 = document.getElementById('q3');
-    const nameInput4 = document.getElementById('q4');
-    const nameInput5 = document.getElementById('q5');
-    const nameInput6 = document.getElementById('q6');
-    const submitBtn = document.getElementById('check-answers-button');
-    const switchLabel = document.getElementById('switch-label');
+const textContent = document.getElementById('text-trans');
+const textContent1 = document.getElementById('text-trans1');
+const textContent2 = document.getElementById('text-trans2');
+const textContent3 = document.getElementById('text-trans3');
+const textContent6 = document.getElementById('text-trans6');
+const textContent7 = document.getElementById('text-trans7');
+const textContent8 = document.getElementById('text-trans8');
+const textContent9 = document.getElementById('li1');
+const textContent10 = document.getElementById('li2');
+const textContent11 = document.getElementById('li3');
+const textContent4 = document.getElementById('greenp');
+const textContent5 = document.getElementById('redp');
+const nameInput1 = document.getElementById('search-input');
+const nameInput = document.getElementById('q1');
+const nameInput2 = document.getElementById('q2');
+const nameInput3 = document.getElementById('q3');
+const nameInput4 = document.getElementById('q4');
+const nameInput5 = document.getElementById('q5');
+const nameInput6 = document.getElementById('q6');
+const submitBtn = document.getElementById('check-answers-button');
+const switchLabel = document.getElementById('switch-label');
 
-    const englishText1 = "Bab 1";
-    const japaneseText1 = "第 1";
+const englishText1 = "Bab 1";
+const japaneseText1 = "第 1";
     
-    const englishText = "Minasan dapat mengakses Honbun Shitsumon<br>Pada tombol berikut ya";
-    const japaneseText = "右側のボタンから本文質問にアクセスすることができます。";
+const englishText = "Minasan dapat mengakses Honbun Shitsumon<br>Pada tombol berikut ya";
+const japaneseText = "右側のボタンから本文質問にアクセスすることができます。";
     
-    const englishText2 = "Mari memulai";
-    const japaneseText2 = "スタート";
+const englishText2 = "Mari memulai";
+const japaneseText2 = "スタート";
 
-    const englishText3 = "Silahkan menyisipkan kosakata yang tepat. Ubah bentuk kosakata jika diperlukan";
-    const japaneseText3 = "単語を入れなさい。必要なら形を変えなさい。";
+const englishText3 = "Silahkan menyisipkan kosakata yang tepat. Ubah bentuk kosakata jika diperlukan";
+const japaneseText3 = "単語を入れなさい。必要なら形を変えなさい。";
 
-    const englishText4 = "jawaban benar";
-    const japaneseText4 = "まるです";
+const englishText4 = "jawaban benar";
+const japaneseText4 = "まるです";
 
-    const englishText5 = "jawaban salah";
-    const japaneseText5 = "ばつです";
+const englishText5 = "jawaban salah";
+const japaneseText5 = "ばつです";
 
-    const englishText8 = "Mulai kuis";
-    const japaneseText8= "クイズスタート";
+const englishText8 = "Mulai kuis";
+const japaneseText8= "クイズスタート";
 
-    const englishText6 = "Yuk kita lanjut kuis";
-    const japaneseText6= "クイズに行きます";
+const englishText6 = "Yuk kita lanjut kuis";
+const japaneseText6= "クイズに行きます";
 
-    const englishText7 = "Latih kemampuanmu dengan kuis ini<br>Dalam waktu 15 menit";
-    const japaneseText7 = "右側のボタンから本文質問にアクセスすることができます。";
+const englishText7 = "Latih kemampuanmu dengan kuis ini<br>Dalam waktu 15 menit";
+const japaneseText7 = "右側のボタンから本文質問にアクセスすることができます。";
 
-    const englishText9 = "Beranda";
-    const japaneseText9= "ホームページ";
+const englishText9 = "Beranda";
+const japaneseText9= "ホームページ";
 
-    const englishText10 = "Artikel";
-    const japaneseText10= "読み物";
+const englishText10 = "Artikel";
+const japaneseText10= "読み物";
 
-    const englishText11 = "Lainnya";
-    const japaneseText11= "他に";
+const englishText11 = "Lainnya";
+const japaneseText11= "他に";
 
-    const englishPlaceholder1 = "Ingin baca apa hari ini";
-    const japanesePlaceholder1 = "あなたの答えはこちらです";
+const englishPlaceholder1 = "Ingin baca apa hari ini";
+const japanesePlaceholder1 = "あなたの答えはこちらです";
 
-    const englishPlaceholder = "Jawabanmu di sini";
-    const japanesePlaceholder = "あなたの答えはこちらです";
+const englishPlaceholder = "Jawabanmu di sini";
+const japanesePlaceholder = "あなたの答えはこちらです";
 
-    const englishPlaceholder2 = "Jawabanmu di sini";
-    const japanesePlaceholder2 = "あなたの答えはこちらです";
+const englishPlaceholder2 = "Jawabanmu di sini";
+const japanesePlaceholder2 = "あなたの答えはこちらです";
 
-    const englishPlaceholder3 = "Jawabanmu di sini";
-    const japanesePlaceholder3 = "あなたの答えはこちらです";
+const englishPlaceholder3 = "Jawabanmu di sini";
+const japanesePlaceholder3 = "あなたの答えはこちらです";
 
-    const englishPlaceholder4 = "Jawabanmu di sini";
-    const japanesePlaceholder4 = "あなたの答えはこちらです";
+const englishPlaceholder4 = "Jawabanmu di sini";
+const japanesePlaceholder4 = "あなたの答えはこちらです";
 
-    const englishPlaceholder5 = "Jawabanmu di sini";
-    const japanesePlaceholder5 = "あなたの答えはこちらです";
+const englishPlaceholder5 = "Jawabanmu di sini";
+const japanesePlaceholder5 = "あなたの答えはこちらです";
 
-    const englishPlaceholder6 = "Jawabanmu di sini";
-    const japanesePlaceholder6 = "あなたの答えはこちらです";
+const englishPlaceholder6 = "Jawabanmu di sini";
+const japanesePlaceholder6 = "あなたの答えはこちらです";
 
-    const englishButton = "Submit";
-    const japaneseButton = "出す";
+const englishButton = "Submit";
+const japaneseButton = "出す";
     
     // Initialize state
     toggleCheckbox.checked = false;
