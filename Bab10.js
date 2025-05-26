@@ -310,8 +310,8 @@ const toggleCheckbox = document.getElementById('language-toggle');
     const submitBtn = document.getElementById('check-answers-button');
     const switchLabel = document.getElementById('switch-label');
 
-    const englishText1 = "Bab 1";
-    const japaneseText1 = "第 1";
+    const englishText1 = "Bab 10";
+    const japaneseText1 = "第 10";
     
     const englishText = "Minasan dapat mengakses Honbun Shitsumon<br>Pada tombol berikut ya";
     const japaneseText = "右側のボタンから本文質問にアクセスすることができます。";
