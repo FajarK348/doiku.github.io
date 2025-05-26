@@ -299,6 +299,7 @@ const paragraphContent = "好きな色は人によって違います。好きな
     // Insert the content into the paragraph element
     document.getElementById('unselectableParagraph').innerText = paragraphContent;
 
+
 const toggleCheckbox = document.getElementById('language-toggle');
     const textContent = document.getElementById('text-trans');
     const textContent1 = document.getElementById('text-trans1');
@@ -452,4 +453,4 @@ const toggleCheckbox = document.getElementById('language-toggle');
         submitBtn.textContent = englishButton;
         switchLabel.textContent = "ID";
       }
-});
+    });
