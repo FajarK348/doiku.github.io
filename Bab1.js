@@ -452,4 +452,4 @@ const toggleCheckbox = document.getElementById('language-toggle');
         submitBtn.textContent = englishButton;
         switchLabel.textContent = "ID";
       }
-    });
+});
