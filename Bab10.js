@@ -292,6 +292,7 @@ const toggleCheckbox = document.getElementById('language-toggle');
     const textContent1 = document.getElementById('text-trans1');
     const textContent2 = document.getElementById('text-trans2');
     const textContent3 = document.getElementById('text-trans3');
+    const textContent13 = document.getElementById('text-trans13');
     const textContent6 = document.getElementById('text-trans6');
     const textContent7 = document.getElementById('text-trans7');
     const textContent8 = document.getElementById('text-trans8');
@@ -306,7 +307,10 @@ const toggleCheckbox = document.getElementById('language-toggle');
     const nameInput3 = document.getElementById('q3');
     const nameInput4 = document.getElementById('q4');
     const nameInput5 = document.getElementById('q5');
-    const nameInput6 = document.getElementById('q6');
+    const nameInput7 = document.getElementById('p1');
+    const nameInput8 = document.getElementById('p2');
+    const nameInput9 = document.getElementById('p3');
+    const nameInput10 = document.getElementById('p4');
     const submitBtn = document.getElementById('check-answers-button');
     const switchLabel = document.getElementById('switch-label');
 
@@ -321,6 +325,9 @@ const toggleCheckbox = document.getElementById('language-toggle');
 
     const englishText3 = "Silahkan menyisipkan kosakata yang tepat. Ubah bentuk kosakata jika diperlukan";
     const japaneseText3 = "単語を入れなさい。必要なら形を変えなさい。";
+
+    const englishText13 = "Silahkan menyisipkan kosakata yang tepat. Ubah bentuk kosakata jika diperlukan";
+    const japaneseText13 = "単語を入れなさい。必要なら形を変えなさい。";
 
     const englishText4 = "jawaban benar";
     const japaneseText4 = "まるです";
@@ -364,8 +371,17 @@ const toggleCheckbox = document.getElementById('language-toggle');
     const englishPlaceholder5 = "Jawabanmu di sini";
     const japanesePlaceholder5 = "あなたの答えはこちらです";
 
-    const englishPlaceholder6 = "Jawabanmu di sini";
-    const japanesePlaceholder6 = "あなたの答えはこちらです";
+    const englishPlaceholder7 = "Jawabanmu di sini";
+    const japanesePlaceholder7 = "あなたの答えはこちらです";
+
+    const englishPlaceholder8 = "Jawabanmu di sini";
+    const japanesePlaceholder8 = "あなたの答えはこちらです";
+
+    const englishPlaceholder9 = "Jawabanmu di sini";
+    const japanesePlaceholder9 = "あなたの答えはこちらです";
+
+    const englishPlaceholder10 = "Jawabanmu di sini";
+    const japanesePlaceholder10 = "あなたの答えはこちらです";
 
     const englishButton = "Submit";
     const japaneseButton = "出す";
@@ -376,6 +392,7 @@ const toggleCheckbox = document.getElementById('language-toggle');
     textContent1.innerHTML = englishText1;
     textContent2.innerHTML = englishText2;
     textContent3.innerHTML = englishText3;
+    textContent13.innerHTML = englishText13;
     textContent6.innerHTML = englishText6;
     textContent7.innerHTML = englishText7;
     textContent8.innerHTML = englishText8;
@@ -390,7 +407,10 @@ const toggleCheckbox = document.getElementById('language-toggle');
     nameInput3.placeholder = englishPlaceholder;
     nameInput4.placeholder = englishPlaceholder;
     nameInput5.placeholder = englishPlaceholder;
-    nameInput6.placeholder = englishPlaceholder;
+    nameInput7.placeholder = englishPlaceholder;
+    nameInput8.placeholder = englishPlaceholder;
+    nameInput9.placeholder = englishPlaceholder;
+    nameInput10.placeholder = englishPlaceholder;
     submitBtn.textContent = englishButton;
     switchLabel.textContent = "ID";
 
@@ -400,6 +420,7 @@ const toggleCheckbox = document.getElementById('language-toggle');
         textContent1.innerHTML = japaneseText1;
         textContent2.innerHTML = japaneseText2;
         textContent3.innerHTML = japaneseText3;
+        textContent13.innerHTML = japaneseText13;
         textContent6.innerHTML = japaneseText6;
         textContent7.innerHTML = japaneseText7;
         textContent8.innerHTML = japaneseText8;
@@ -414,7 +435,10 @@ const toggleCheckbox = document.getElementById('language-toggle');
         nameInput3.placeholder = japanesePlaceholder;
         nameInput4.placeholder = japanesePlaceholder;
         nameInput5.placeholder = japanesePlaceholder;
-        nameInput6.placeholder = japanesePlaceholder;
+        nameInput7.placeholder = japanesePlaceholder;
+        nameInput8.placeholder = japanesePlaceholder;
+        nameInput9.placeholder = japanesePlaceholder;
+        nameInput10.placeholder = japanesePlaceholder;
         submitBtn.textContent = japaneseButton;
         switchLabel.textContent = "JP";
       } else {
@@ -422,6 +446,7 @@ const toggleCheckbox = document.getElementById('language-toggle');
         textContent1.innerHTML = englishText1;
         textContent2.innerHTML = englishText2;
         textContent3.innerHTML = englishText3;
+        textContent13.innerHTML = englishText13;
         textContent6.innerHTML = englishText6;
         textContent7.innerHTML = englishText7;
         textContent8.innerHTML = englishText8;
@@ -436,7 +461,10 @@ const toggleCheckbox = document.getElementById('language-toggle');
         nameInput3.placeholder = englishPlaceholder;
         nameInput4.placeholder = englishPlaceholder;
         nameInput5.placeholder = englishPlaceholder;
-        nameInput6.placeholder = englishPlaceholder;
+        nameInput7.placeholder = englishPlaceholder;
+        nameInput8.placeholder = englishPlaceholder;
+        nameInput9.placeholder = englishPlaceholder;
+        nameInput10.placeholder = englishPlaceholder;
         submitBtn.textContent = englishButton;
         switchLabel.textContent = "ID";
       }
