@@ -360,7 +360,7 @@ const toggleCheckbox = document.getElementById('language-toggle');
     const japaneseText11= "他";
 
     const englishPlaceholder1 = "Ingin baca apa hari ini";
-    const japanesePlaceholder1 = "あなたの答えはこちらです";
+    const japanesePlaceholder1 = "今日は何を読みたいですか";
 
     const englishPlaceholder = "Jawabanmu di sini";
     const japanesePlaceholder = "あなたの答えはこちらです";
