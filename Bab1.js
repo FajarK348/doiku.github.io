@@ -253,7 +253,7 @@ function checkAnswers() {
         
         const answerDiv = document.createElement("div");
         answerDiv.className = isCorrect ? "correct" : "incorrect";
-        answerDiv.innerHTML = `${key.charAt(1)}. Jawabanmu: "${userAnswer}"`;
+        answerDiv.innerHTML = `${key.charAt(1)}. ${userAnswer}`;
         
         resultDiv.appendChild(answerDiv);
     }
@@ -347,8 +347,8 @@ const japaneseText8= "クイズスタート";
 const englishText6 = "Yuk kita lanjut kuis";
 const japaneseText6= "クイズに行きます";
 
-const englishText7 = "Latih kemampuanmu dengan kuis ini<br>Dalam waktu 15 menit";
-const japaneseText7 = "右側のボタンから本文質問にアクセスすることができます。";
+const englishText7 = "Latih kemampuanmu dengan kuis ini<br>Dalam waktu 25 menit";
+const japaneseText7 = "このクイズで25分間練習しましょう";
 
 const englishText9 = "Beranda";
 const japaneseText9= "ホームページ";
