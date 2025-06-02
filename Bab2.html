@@ -5,6 +5,9 @@
     <meta name="description" content="Artikel Doiku">
     <meta name="keywords" content="Pencarian Artikel,Artikel Dokkai">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <title>Doiku | Bab 2 世界のじゃんけん</title>
     <link rel="stylesheet" href="Bab2.css">
 </head>
@@ -24,23 +27,28 @@
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
                 </button>
             </div>
+            <div class="switchnav">
+            <label class="switch">
+            <input type="checkbox" id="language-toggle">
+            <span class="slider"></span>
+            </label>
+            <label for="language-toggle" class="switch-label" id="switch-label">ID</label>
+            </div>
          </div>
-            
          <script src="DOArtikel.js"></script>
          <ul>
-            <li><a href="DOdo.html">Beranda</a></li>
-            <li><a href="DOArtikel.html">Artikel</a></li>
-            <li><a href="Other.html">Lainnya</a></li>
+            <li><a href="DOdo.html" id="li1">Beranda</a></li>
+            <li><a href="DOArtikel.html" id="li2">Artikel</a></li>
+            <li><a href="Other.html" id="li3">Lainnya</a></li>
         </ul>
     </nav>
-    </div>
     <div class="container-bab">
         <div class="image-section">
             <img src="bab/Bab 2 Bacckground.jpg" alt="bab1 image">
             <div class="overlay"></div>
         </div>
         <div class="text-section">
-            <h1>Bab 2</h1>
+            <h1 id="text-trans1">Bab 2</h1>
             <h2>世界のじゃんけん</h2>
             <p>New Approach Japanese Intermediate Course</p>
         </div>
@@ -118,14 +126,14 @@
     <div class="quiz-container">
         <h1>本文質問</h1>
         <div class="overlay-images">
-            <p>Minasan dapat mengakses Honbun Shitsumon<br>Pada tombol berikut ya</p>
+            <p id="text-trans">Minasan dapat mengakses Honbun Shitsumon<br>Pada tombol berikut ya</p>
             <img src="images/Dino FAQ2.png" alt="Imagesquiz" class="overlay-image">
-            <a href="https://forms.gle/ddzLeTswhijxSpHg6" target="_blank" rel="noopener noreferrer" class="quiz-btn">Mari memulai</a>
+            <a href="https://forms.gle/ddzLeTswhijxSpHg6" target="_blank" rel="noopener noreferrer" class="quiz-btn" id="text-trans2">Mari memulai</a>
         </div>
     </div>
     <div class="tangonoimi">
         <h1>単語の意味の確認</h1>
-        <h2>単語を入れなさい。必要なら形を変えなさい。</h2>
+        <h2 id="text-trans3">単語を入れなさい。必要なら形を変えなさい。</h2>
         <div class="choice">
             <p> 布 握る 倒す 合わせる 表す 出す
             </p>
@@ -154,22 +162,35 @@
                 <label for="q6">6. 山田さんはカラオケが大好きで、マイクを <input type="text" id="q6" placeholder="Jawabanmu di sini" autocomplete="off">たらなかなか放しません。</label>
             </div>
         <button type="button"  id="check-answers-button">Submit</button>
-            <img src="images/Tango img.png" alt="">
+            <div class="indicator">
+                <div class="green-indi"></div>
+                <p class="green-p" id="greenp">jawaban benar</p>
+                <div class="red-indi"></div>
+                <p class="red-p" id="redp">jawaban salah</p>
+            </div>
         </form>
         <div id="result"></div>
     </div>
-    <script src="Bab2.js"></script>
+    
     <div class="quiz-container">
-        <h1>Yuk kita lanjut kuis!</h1>
+        <h1 id="text-trans6">Yuk kita lanjut kuis!</h1>
         <div class="overlay-images">
-            <p>Latih kemampuanmu dengan kuis ini<br>Dalam waktu: 15 menit</p>
+            <p id="text-trans7">Latih kemampuanmu dengan kuis ini<br>Dalam waktu: 15 menit</p>
             <img src="images/Dino book.png" alt="Imagesquiz" class="overlay-image">
-            <a href="quizz.html" class="quiz-btn">Mulai Kuis</a>
+            <a href="quizz.html" class="quiz-btn" id="text-trans8">Mulai Kuis</a>
         </div>
     </div>
+    <script src="Bab2.js"></script>
+
     <div class="btnbab">
+        <div class="kiribtn">
+        <a href="DOdo.html" class="backhomebtn">
+            <img src="images/home icon.png" alt="">
+        </a>
         <a href="Bab1.html" class="prevbab">
             &#129120; Bab 1  </a>
+        </div>
+
         <a href="Bab3.html" class="nextbab">
             Bab 3 &#129122;</a>
     </div>
