@@ -295,7 +295,7 @@ if (userSavedTheme === 'dark') {
 }
 
 
-const paragraphContent = "好きな色は人によって違います。好きな色でその人の性格が分かると言う人もいます。でも、明るい色より暗い色のほうが好きな人は性格も暗いでしょうか。色と性格が関係があるかどうかは分かりませんが、色とその色からイメージする"
+const paragraphContent = "好きな色は人によって違います。好きな色でその人の性格が分かると言う人もいます。でも、明るい色より暗い色のほうが好きな人は性格も暗いでしょうか。色と性格が関係があるかどうかは分かりませんが、色とその色からイメージするものは関係があるかもしれません。"
     // Insert the content into the paragraph element
     document.getElementById('unselectableParagraph').innerText = paragraphContent;
 
