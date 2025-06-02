@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="quiz4;17.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Drag and Drop Arrange Quiz</h1>
+        <h2>Susunlah kata-kata di bawah ini dengan cara menggeser dan meletakkannya pada kolom yang tersedia. <br> sehingga membentuk sebuah pernyataan yang tepat</h2>
+        <div class="sentence" id="sentence">
+            <span class="placeholder">_____</span>
+            <span class="placeholder">_____</span>
+            <span class="placeholder">_____</span>
+            <span class="placeholder">_____</span>
+            <span class="placeholder">_____</span>
+            <span class="placeholder">_____</span>
+        </div>
+        <div class="words" id="words">
+            <!-- Words will be dynamically loaded here -->
+        </div>
+        <div id="timer">Time Left: 15:00</div> <!-- Timer Display -->
+        <button id="undoButton">Undo</button>
+        <button id="checkAnswers">Check Answers</button>
+        <div id="result"></div>
+
+        <img id="correctImage" src="images/Dino KiraKira1.png" alt="Correct!" style="display: none; width: 250px;" />
+    </div>
+    <div class="btnbab">
+        <div class="kiribtn">
+            <button id="previousBtn" aria-label="Go to previous page" class="prevbtn ">&#10094;</button>
+        </div>
+    </div>
+
+    <script src="quiz4;17.js"></script>
+</body>
+</html>

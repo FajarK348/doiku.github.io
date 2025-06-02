@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="quiz5;16.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Drag and Drop Matching Quiz</h1>
+        <h2>Susunlah kalimat rumpang di bawah ini dengan cara menggeser dan meletakkan pilihan kata yang telah tersedia <br> ke dalam kolom pada kalimat rumpang, sehingga membentuk sebuah pernyataan yang benar</h2>
+        <div id="timer">Time Left: 15:00</div>
+        <div class="sentence">
+            <input type="text" class="blank" placeholder="word" data-answer="いわゆる" readonly /> 目の錯覚である。
+        </div>
+        <div class="sentence">
+            実は見方を変えると<input type="text" class="blank" placeholder="word" data-answer="老婆" readonly /> が現れる。
+        </div>
+        <div class="sentence">
+            面白いことに、老婆が現れたときには、<input type="text" class="blank" placeholder="word" data-answer="婦人" readonly />は見えない。
+        </div>
+        <div class="sentence">
+            実に不思議なものである。決して<input type="text" class="blank" placeholder="word" data-answer="同時" readonly />に見えることはない。
+        </div>
+        <div class="sentence">
+            絵の額縁も含めてすべて壁に直接特殊な<input type="text" class="blank" placeholder="word" data-answer="ペンキ" readonly /> を塗ってかかれている。
+        </div>
+
+        <h3>Pilihan kata</h3>
+        <div id="word-bank">
+            <div class="word" draggable="true">婦人</div>
+            <div class="word" draggable="true">ペンキ</div>
+            <div class="word" draggable="true">老婆</div>
+            <div class="word" draggable="true">同時</div>
+            <div class="word" draggable="true">いわゆる</div>
+        </div>
+        
+    <button id="undo-button">Undo</button>
+    <button id="submit-button">Submit</button>
+    <div id="result"></div>
+    <img id="animation" src="images/Dino KiraKira1.png" style="display:none;" alt="Submitting..." />
+    </div>
+    <div class="btnbab">
+        <div class="kiribtn">
+            <button id="previousBtn" aria-label="Go to previous page" class="prevbtn ">&#10094;</button>
+        </div>
+    </div>
+
+    <script src="quiz5;16.js"></script>
+</body>
+</html>
