@@ -290,7 +290,8 @@ if (userSavedTheme === 'dark') {
 }
 
 
-const paragraphContent = "日曜日に友人を誘ってラーメンを食べに行くことにした。";
+const paragraphContent = "日曜日に友人を誘ってラーメンを食べに行くことにした。そこは行列のできる店として有名で、ぜひ一度食べに行きたいと思っていた。友人に「やっぱりおいしいから行列ができるんだよね」と私が聞くと、友人は「それはそうだけど、行列ができるからおいしいんじゃないかな」と言った。おもしろいことを言うものだと思ったが、とにかく一緒に食べに行くことにした。";
+";
 
     // Insert the content into the paragraph element
     document.getElementById('unselectableParagraph').innerText = paragraphContent;
