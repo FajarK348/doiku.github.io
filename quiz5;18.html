@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="quiz5;18.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Drag and Drop Matching Quiz</h1>
+        <h2>Susunlah kalimat rumpang di bawah ini dengan cara menggeser dan meletakkan pilihan kata yang telah tersedia <br> ke dalam kolom pada kalimat rumpang, sehingga membentuk sebuah pernyataan yang benar</h2>
+        <div id="timer">Time Left: 15:00</div>
+        <div class="sentence">
+            日曜日に<input type="text" class="blank" placeholder="word" data-answer="友人" readonly /> を誘ってラーメンを食べに行くことにした。
+        </div>
+        <div class="sentence">
+            おもしろいことを言うものだと思ったが、とにかく<input type="text" class="blank" placeholder="word" data-answer="一緒" readonly /> に食べに行くことにした。
+        </div>
+        <div class="sentence">
+            列の最後につくと、<input type="text" class="blank" placeholder="word" data-answer="すぐに" readonly />また別のグループが後ろについた。
+        </div>
+        <div class="sentence">
+            <input type="text" class="blank" placeholder="word" data-answer="入口" readonly />に近づくにつれて、ラーメンのにおいがしてきた。
+        </div>
+        <div class="sentence">
+            <input type="text" class="blank" placeholder="word" data-answer="しばらくして" readonly /> 、注文したラーメンが目の前に運ばれて来た。
+        </div>
+
+        <h3>Pilihan kata</h3>
+        <div id="word-bank">
+            <div class="word" draggable="true">一緒</div>
+            <div class="word" draggable="true">入口</div>
+            <div class="word" draggable="true">友人</div>
+            <div class="word" draggable="true">しばらくして</div>
+            <div class="word" draggable="true">すぐに</div>
+        </div>
+        
+    <button id="undo-button">Undo</button>
+    <button id="submit-button">Submit</button>
+    <div id="result"></div>
+    <img id="animation" src="images/Dino KiraKira1.png" style="display:none;" alt="Submitting..." />
+    </div>
+    <div class="btnbab">
+        <div class="kiribtn">
+            <button id="previousBtn" aria-label="Go to previous page" class="prevbtn ">&#10094;</button>
+        </div>
+    </div>
+
+    <script src="quiz5;18.js"></script>
+</body>
+</html>
