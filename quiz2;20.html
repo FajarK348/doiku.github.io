@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doiku | Fill in the Blank Quiz</title>
+    <link rel="stylesheet" href="quiz2;20.css">
+</head>
+<body>
+    <div>
+    </div>
+    <div class="quiz-container">
+        <div id="question"></div>
+
+        <h1>Fill in the Blank Quiz</h1>
+        <h2>Lengkapi kalimat rumpang di bawah ini dengan kosakata yang tepat dan disesuaikan dengan konteks kalimat.</h2>
+        
+        <form id="quizForm">
+            <div class="question">
+                <label for="q1">1. 日本では<input type="text" id="q1" placeholder="Jawabanmu di sini" autocomplete="off">の運転免許を取ろうと思う人はたいてい自動車運転教習所に通う。</label>
+            </div>
+            <div class="question">
+                <label for="q2">2. 実際に<input type="text" id="q2" placeholder="Jawabanmu di sini" autocomplete="off">に出て走りながら身につける技術というものもある。
+                </label>
+            </div>
+            <div class="question">
+                <label for="q3">3. <input type="text" id="q3" placeholder="Jawabanmu di sini" autocomplete="off">と光ので会話するのである。
+                </label>
+            </div>
+            <div class="question">
+                <label for="q4">4. この3つは教習所で<input type="text" id="q4" placeholder="Jawabanmu di sini" autocomplete="off">する本来の使い方とは違うものである。
+                </label>
+            </div>
+            <div class="question">
+                <label for="q5">5. ところが、言葉と同様に誤解も起こるし『<input type="text" id="q5" placeholder="Jawabanmu di sini" autocomplete="off">』もある。
+                </label>
+            </div>
+            <button type="submit">Submit</button>
+            <div id="timer" class="timer">Time left: <span id="time">60</span> seconds</div>
+        </form>
+        <div id="result" class="result"></div>
+        <img id="celebrationImage" src="images/Dino KiraKira1.png" alt="Celebration" class="hidden">
+    </div>
+    <div class="btnbab">
+        <div class="kiribtn">
+            <button id="previousBtn" aria-label="Go to previous page" class="prevbtn ">&#10094;</button>
+        </div>
+    </div>
+    <script src="quiz2;20.js"></script>
+</body>
+</html>
