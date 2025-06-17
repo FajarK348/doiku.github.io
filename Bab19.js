@@ -237,13 +237,13 @@ document.getElementById('search-button').addEventListener('click', function() {
 function checkAnswers() {
     const answers = {
         q1a: "本当は",
-        q1b: "逆に",
-        q2: "うまく",
+        q1b: "本当に",
+        q2: "逆に",
         q3: "関心",
         q4: "納得",
         q5: "感心",
         q6: "普段",
-        q7: "本当に",
+        q7: "うまく",
     };
 
     const resultDiv = document.getElementById("result");
